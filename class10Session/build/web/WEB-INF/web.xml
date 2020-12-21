@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>getcountry</servlet-name>
+        <servlet-class>controller.getcountry</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getname</servlet-name>
+        <servlet-class>controller.getname</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>gethobby</servlet-name>
+        <servlet-class>controller.gethobby</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getcountry</servlet-name>
+        <url-pattern>/getcountry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getname</servlet-name>
+        <url-pattern>/getname</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>gethobby</servlet-name>
+        <url-pattern>/gethobby</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

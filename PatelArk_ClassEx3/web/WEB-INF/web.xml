@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>checkBMI</servlet-name>
+        <servlet-class>controller.checkBMI</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>name</servlet-name>
+        <servlet-class>controller.name</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>weight</servlet-name>
+        <servlet-class>controller.weight</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>height</servlet-name>
+        <servlet-class>controller.height</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkBMI</servlet-name>
+        <url-pattern>/checkBMI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>name</servlet-name>
+        <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>weight</servlet-name>
+        <url-pattern>/weight</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>height</servlet-name>
+        <url-pattern>/height</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>entrypage.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AppointProcess</servlet-name>
+        <servlet-class>controller.AppointProcess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppointProcess</servlet-name>
+        <url-pattern>/AppointProcess</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>connUrl</param-name>
+        <param-value>jdbc:mysql://localhost:3306/appointments</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>ARKpatel@24</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Appointentry.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

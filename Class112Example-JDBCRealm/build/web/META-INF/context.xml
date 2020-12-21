@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Class112Example-JDBCRealm">
+  <Realm className="org.apache.catalina.realm.JDBCRealm" 
+         connectionName="root" connectionPassword="Sheridan" 
+         connectionURL="jdbc:mysql://localhost:3306/examplejdbcrealm" 
+         driverName="com.mysql.jdbc.Driver"  
+         userTable="users"
+         userCredCol="password" userNameCol="userName" 
+         userRoleTable="roles" roleNameCol="roleName" /> 
+</Context>

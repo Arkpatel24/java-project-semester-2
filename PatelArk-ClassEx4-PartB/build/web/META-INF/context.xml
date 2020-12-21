@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/PatelArk-ClassEx4-PartB">
+    <Realm className="org.apache.catalina.realm.JDBCRealm" 
+         connectionName="root" connectionPassword="ARKpatel@24" 
+         connectionURL="jdbc:mysql://localhost:3306/classexercise4realm" 
+         driverName="com.mysql.jdbc.Driver"  
+         userTable="users"
+         userCredCol="password" userNameCol="userName" 
+         userRoleTable="roles" roleNameCol="rolename" /> 
+     </Context>

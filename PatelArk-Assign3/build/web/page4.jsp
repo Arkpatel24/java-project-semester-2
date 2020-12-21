@@ -1,0 +1,28 @@
+<%-- 
+    Document   : page4
+    Created on : 20 Nov, 2019, 4:21:28 PM
+    Author     : ARK PATEL
+--%>
+
+<%@page import="model.Survey"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <center>
+            <h3>Hello ${sur1.name}</h3>
+        <form action="Ques3" method="post">  
+              
+        <h3>Feedback Question 3</h3>
+        What is one feature that you will like to be added to the application?
+        <input type="text" name="q3"><br>
+        <input type="submit" value="Next Question"><br>
+        <a href="page3.jsp">Previous Question</a>
+        </form>
+        </center>
+    </body>
+</html>
